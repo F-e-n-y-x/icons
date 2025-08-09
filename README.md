@@ -2,10 +2,6 @@
 
 A curated collection of modern, minimalist SVG icons—designed for seamless use in websites, apps and design systems.
 
-[![Icons](https://img.shields.io/badge/icons-count-auto-blueviolet?logo=svg)](#icons)  
-[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)  
-[![Pages](https://img.shields.io/badge/live-preview-GitHub&nbsp;Pages-orange)](https://f-e-n-y-x.github.io/icons)
-
 ---
 
 ## 🚀 Quick Start
