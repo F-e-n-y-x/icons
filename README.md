@@ -115,12 +115,5 @@ export default function Navbar() {
 1. **Fork** the repo & create a new branch.  
 
 ---
-
-## 📜 License
-
-Icons, code and site are released under the **MIT License**.  
-See [LICENSE](LICENSE) for details.
-
----
  
 Happy designing!
