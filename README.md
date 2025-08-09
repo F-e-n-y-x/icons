@@ -113,25 +113,6 @@ export default function Navbar() {
 ## 🤝 Contributing
 
 1. **Fork** the repo & create a new branch.  
-2. Add your SVG to the correct sub-folder:  
-   * 24 × 24 viewBox  
-   * Strokes at **2 px** (or consistent)  
-   * Use `currentColor` for fills/strokes  
-   * File name: `kebab-case.svg`  
-3. Run `npm run lint:svg` (coming soon).  
-4. Open a PR with a descriptive title.
-
----
-
-## 📈 Auto-Generated Stats
-
-| Metric | Value* |
-|--------|--------|
-| Total icons | ![auto](https://img.shields.io/badge/dynamic/json?label=&url=https%3A%2F%2Fraw.githubusercontent.com%2FF-e-n-y-x%2Ficons%2Fmain%2Fpreview%2Fstats.json&query=%24.total&color=blue) |
-| Categories  | ![auto](https://img.shields.io/badge/dynamic/json?label=&url=https%3A%2F%2Fraw.githubusercontent.com%2FF-e-n-y-x%2Ficons%2Fmain%2Fpreview%2Fstats.json&query=%24.categories&color=blue) |
-| Contributors | ![GitHub contributors](https://img.shields.io/github/contributors/F-e-n-y-x/icons) |
-
-_\*Updated on every push via GitHub Actions._
 
 ---
 
