@@ -82,7 +82,7 @@ README.md
 ### HTML
 
 ```html
-<link rel="stylesheet" href="https://f-e-n-y-x.github.io/icons/css/icons.css">
+<link rel="stylesheet" href="https://f-e-n-y-x.github.io/icons/*.png/.svg">
 <i class="icon icon-search"></i>
 ```
 
@@ -92,7 +92,7 @@ README.md
 export default function Navbar() {
   return (
     <img
-      src="https://raw.githubusercontent.com/F-e-n-y-x/icons/main/icons/ui/menu.svg"
+      src="https://raw.githubusercontent.com/F-e-n-y-x/icons/main/icons/ui/*.png/.svg"
       width={32}
       height={32}
       alt="menu"
@@ -141,6 +141,5 @@ Icons, code and site are released under the **MIT License**.
 See [LICENSE](LICENSE) for details.
 
 ---
-
-Made with ❤️ in Delhi by **F-e-n-y-x**.  
+ 
 Happy designing!
