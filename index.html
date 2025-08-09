@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icons Collection</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <h1 class="header__title">Icons Collection</h1>
+                <div class="header__actions">
+                    <a href="https://github.com" target="_blank" class="btn btn--outline btn--sm" aria-label="View on GitHub">
+                        <i class="fab fa-github"></i>
+                        GitHub
+                    </a>
+                    <button class="btn btn--outline btn--sm theme-toggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon theme-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__content">
+                <h2 class="hero__title">Beautiful SVG Icons Collection</h2>
+                <p class="hero__description">Discover and use high-quality SVG icons for your projects. Copy, download, or get the embed code instantly.</p>
+                <div class="hero__stats">
+                    <div class="stat">
+                        <span class="stat__number" id="totalIcons">0</span>
+                        <span class="stat__label">Total Icons</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__number" id="totalCategories">0</span>
+                        <span class="stat__label">Categories</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-filters">
+                <div class="search-input-wrapper">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" class="form-control search-input" placeholder="Search icons..." id="searchInput">
+                </div>
+                <select class="form-control category-filter" id="categoryFilter">
+                    <option value="">All Categories</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Icons Grid -->
+    <main class="main-content">
+        <div class="container">
+            <div class="icons-grid" id="iconsGrid">
+                <!-- Icons will be populated by JavaScript -->
+            </div>
+            <div class="no-results hidden" id="noResults">
+                <i class="fas fa-search"></i>
+                <h3>No icons found</h3>
+                <p>Try adjusting your search or filter criteria.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal hidden" id="iconModal">
+        <div class="modal__overlay" id="modalOverlay"></div>
+        <div class="modal__content">
+            <button class="modal__close" id="modalClose" aria-label="Close modal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal__header">
+                <h3 class="modal__title" id="modalTitle">Icon Name</h3>
+                <div class="modal__category" id="modalCategory">Category</div>
+            </div>
+            <div class="modal__body">
+                <div class="modal__preview">
+                    <div class="icon-preview" id="iconPreview">
+                        <!-- SVG will be loaded here -->
+                    </div>
+                    <div class="size-controls">
+                        <button class="size-btn size-btn--active" data-size="24">24px</button>
+                        <button class="size-btn" data-size="32">32px</button>
+                        <button class="size-btn" data-size="48">48px</button>
+                        <button class="size-btn" data-size="64">64px</button>
+                    </div>
+                </div>
+                <div class="modal__actions">
+                    <button class="btn btn--primary" id="copyUrl">
+                        <i class="fas fa-link"></i>
+                        Copy URL
+                    </button>
+                    <button class="btn btn--secondary" id="copyHtml">
+                        <i class="fas fa-code"></i>
+                        Copy HTML
+                    </button>
+                    <button class="btn btn--outline" id="downloadIcon">
+                        <i class="fas fa-download"></i>
+                        Download SVG
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast hidden" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span class="toast__message" id="toastMessage">Copied to clipboard!</span>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
